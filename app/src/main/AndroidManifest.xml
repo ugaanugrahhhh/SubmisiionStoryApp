@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LoginWithAnimation">
+        <activity
+            android:name=".view.logout.LogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.camera.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.story.DetailStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.story.ListStoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.welcome.WelcomeActivity"
+            android:exported="true">
+            <service
+                android:name="com.google.android.gms.metadata.ModuleDependencies"
+                android:enabled="false"
+                android:exported="true"
+                tools:ignore="MissingClass,WrongManifestParent">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+
+                <provider
+                    android:name="androidx.core.content.FileProvider"
+                    android:authorities="${applicationId}.fileprovider"
+                    android:exported="false"
+                    android:grantUriPermissions="true">
+                    <meta-data
+                        android:name="photopicker_activity:0:required"
+                        android:resource="@xml/file_paths"
+                        android:value="" />
+                </provider>
+            </service>
+        </activity>
+        <activity
+            android:name=".view.signup.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.camera.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

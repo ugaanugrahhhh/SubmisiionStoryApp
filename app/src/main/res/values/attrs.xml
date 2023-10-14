@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="MyEditText">
+        <attr name="isEmailField" format="boolean" />
+    </declare-styleable>
+</resources>

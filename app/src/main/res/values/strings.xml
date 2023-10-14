@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LoginWithAnimation</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Login</string>
+    <string name="photo">Photo</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="upload">Unggah</string>
+    <string name="description">Description</string>
+    <string name="message_welcome_page">Mau belajar bahasa pemrograman Kotlin ya Di Dicoding aja!</string>
+    <string name="title_welcome_page">Selamat Datang di Dicoding! Hy Cohort Mobile Development!</string>
+    <string name="title_signup_page">Lengkapi data diri kalian di bawah ini ya</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Silakan masuk untuk mengakses kursus dan materi pelatihannya</string>
+    <string name="title_login_page">Sudah siap untuk upgrade skill?</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Selamat Belajar di Dicoding.</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Keluar</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_add_stories">Add Story</string>
+
+</resources>
